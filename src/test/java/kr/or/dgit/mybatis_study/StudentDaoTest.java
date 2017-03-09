@@ -1,5 +1,6 @@
 package kr.or.dgit.mybatis_study;
 
+import java.util.Date;
 import java.util.List;
 
 import org.junit.AfterClass;
@@ -29,5 +30,12 @@ public class StudentDaoTest {
 			System.out.println(s);
 		}
 		Assert.assertNotNull(lists); 
+	}
+	
+	@Test
+	public void testinsertStudent() {
+		Student std = new Student(7,"아구몬","fds@naver.com",new Date());
+		int res = studentService.insertStudent(std);
+		Assert.assertEquals(1, res); 
 	}
 }
