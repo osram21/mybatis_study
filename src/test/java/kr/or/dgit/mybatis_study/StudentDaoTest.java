@@ -45,10 +45,16 @@ public class StudentDaoTest {
 		Assert.assertNotNull(student); 
 	}
 	
-	@Test
+	/*@Test
 	public void testupdateStudent() {
 		Student std = new Student(2,"아구몬","asdf@co.kr", new Date());
 		int res = studentService.updateStudent(std);
 		Assert.assertEquals(1, res); 
+	}*/
+	
+	@Test
+	public void testdeleteStudentByNo() {
+		int student = studentService.deleteStudentByNo(11);
+		Assert.assertEquals(1, student);
 	}
 }
