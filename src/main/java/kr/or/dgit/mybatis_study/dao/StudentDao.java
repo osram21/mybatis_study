@@ -6,6 +6,7 @@ import kr.or.dgit.mybatis_study.dto.Student;
 
 public interface StudentDao {
 	int insertStudent(Student student);
+	int insertStudentWithPhone(Student student); //typehandler 예제
 	List<Student> selectStudentByAll();
 	Student selectStudentByNo(int studNo);
 	int updateStudent(Student student);

@@ -11,6 +11,11 @@
 		values(#{studId},#{name},#{email},#{dob})
 	</insert>
 	
+	<insert id="insertStudentWithPhone" parameterType="Student">
+		insert into student (stud_id,name,email,dob,phone)
+		values(#{studId},#{name},#{email},#{dob},#{phone})
+	</insert>
+	
 	<select id="selectStudentByNo" parameterType="int" resultType="Student">
 		select stud_id,name,email,dob from student 
 		where stud_id = #{studId}
