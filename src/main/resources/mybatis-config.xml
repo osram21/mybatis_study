@@ -24,6 +24,7 @@
 		</environment>
 	</environments>
 	<mappers>
-		<mapper resource="kr/or/dgit/mybatis_study/mappers/StudentMapper.xml" />
+		<!-- <mapper resource="kr/or/dgit/mybatis_study/mappers/StudentMapper.xml" /> -->
+		<package name="kr.or.dgit.mybatis_study.dao"/>
 	</mappers>
 </configuration>
